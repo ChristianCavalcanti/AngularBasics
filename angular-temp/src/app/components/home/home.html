@@ -5,6 +5,7 @@
     <a href="#">Menu</a>
     <a href="#">About</a>
     <a href="#">Contact</a>
+    <a routerLink="/suggestions">Suggestions Page</a>
   </nav>
 </header>
 
@@ -32,6 +33,15 @@
       <h3>Margherita Pizza</h3>
       <p>Melted cheese, basil, and handcrafted tomato sauce.</p>
     </div>
+  </div>
+</section>
+
+<section class="notes-section">
+  <h2>Testing DB with suggestions:</h2>
+
+  <div class="note-form">
+    <input [(ngModel)]="newNote" placeholder="Write a suggestion..." />
+    <button (click)="submitNote()">Add</button>
   </div>
 </section>
 
